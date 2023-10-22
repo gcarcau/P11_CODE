@@ -50,11 +50,11 @@ Accéder à l'application web
 
 * HTML5/CSS3
 * [Boostrap](https://getbootstrap.com/)
-* [Angular] (https://angular.io/docs)
-* [Java] (https://www.java.com/fr/)
-* [Spring Boot] (https://spring.io/projects/spring-boot)
-* [JMeter] (https://jmeter.apache.org/)
-* [SQL] (https://sql.sh/)
+* [Angular](https://angular.io/docs)
+* [Java](https://www.java.com/fr/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [JMeter](https://jmeter.apache.org/)
+* [SQL](https://sql.sh/)
 
 ## Contribution
 
@@ -73,5 +73,5 @@ Le WorkFlow utilisé pour se projet est un workflow reposant sur "GitFlow" qui c
     - HotFixes : Concerne les corrections de bugs des features développés
     - Main : Concerne la branche principale des fichiers livrés
  
-    Pour chaque nouvelle fonctionnalité :
-    Merci de bien vouloir suivre la méthodologie [GitFlow] (https://buildmedia.readthedocs.org/media/pdf/git-flow/latest/git-flow.pdf).
+Pour chaque nouvelle fonctionnalité :
+* Merci de bien vouloir suivre la méthodologie [GitFlow](https://buildmedia.readthedocs.org/media/pdf/git-flow/latest/git-flow.pdf).
