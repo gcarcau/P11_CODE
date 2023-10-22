@@ -1,0 +1,9 @@
+<div class="hopital-card" *ngFor="let hopital of hopitaux$ | async">
+    <h2>{{ hopital.nom | titlecase}}</h2>
+    <p>Cet hôpital est à {{hopital.nombreLit}} de l'adresse saisie.</p>
+    <p>Il y a {{hopital.nombreLit}} lits disponibles.</p>
+    <p>Adresse : {{hopital.localisation}}</p>
+    <p>
+        <button (click)="onItinairaire(hopital.localisation)">S'y rendre !</button>
+    </p>
+</div>

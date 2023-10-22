@@ -1,0 +1,30 @@
+<div class="form-card">
+    <h2>Recherchez l'hôpital le plus proche !</h2>
+    <form [formGroup]="rechercheForm">
+        <div class="form-group">
+            <label for="adresse">Votre adresse</label>
+            <input value={{geoloc}} type="text" id="adresse" formControlName="adresse">
+        </div>
+
+        <div class="form-group">
+            <label for="idSpecialisations">Sélectionné la spécialité</label>
+            <select formControlName="idSpecialisations">
+                <option label="--select something --"></option>
+                <option *ngFor="let specialite of specialisations$ | async" value={{specialite.id}}>{{specialite.groupe}}</option>
+            </select>
+        </div>
+        <div class="action-button">
+            <button class="recherche"type="submit" (click)="onSubmitForm()" [disabled]="rechercheForm.invalid">Enregistrer!</button>
+        </div>
+    </form>
+</div>
+<div class="hopital-card" *ngIf="hopital$ |async as hopital">
+    <h2>{{ hopital.nom | titlecase}}</h2>
+    <p>Cet hôpital est à {{hopital.distance}} de l'adresse saisie.</p>
+    <p>Il y a {{hopital.nombreLit}} lits disponibles.</p>
+    <p>Adresse : {{hopital.localisation}}</p>
+    <p>
+        <button (click)="onItinairaire(hopital.localisation)">S'y rendre !</button>
+        <button>Réservez un lit</button>
+    </p>
+</div>
