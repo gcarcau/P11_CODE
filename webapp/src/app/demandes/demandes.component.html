@@ -1,0 +1,23 @@
+<div class="table-card">
+
+    <table>
+        <thead>
+            <caption>Liste des hôpitaux</caption>
+            <tr>
+                <th>Date</th>
+                <th>Adresse</th>
+                <th>Retour serveur</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let demande of demandes$ | async">
+                <td><span> {{demande.date | date:'dd MMMM yyyy'}} </span></td>
+                <td><span> {{demande.adresse}} </span></td>
+                <td><span> {{demande.retour}}</span></td>
+                <td><button>🗑️</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

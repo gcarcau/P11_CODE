@@ -1,0 +1,23 @@
+<div class="table-card">
+
+    <table>
+        <thead>
+            <caption>Liste des hôpitaux</caption>
+            <tr>
+                <th>Nom</th>
+                <th>Localisation</th>
+                <th>Nombre de lits</th>
+                <th>Itinéraire</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let hopital of hopitaux$ | async">
+                <td><span> {{hopital.nom}} </span></td>
+                <td><span> {{hopital.localisation}} </span></td>
+                <td><span> {{hopital.nombreLit}}</span></td>
+                <td><button (click)="onItinairaire(hopital.localisation)">📍</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

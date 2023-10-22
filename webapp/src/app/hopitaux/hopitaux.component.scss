@@ -1,0 +1,59 @@
+.table-card {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  
+}
+
+
+
+table {
+  border-collapse:collapse;
+  width:100%;
+  text-align:center;
+  }
+
+  caption {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  table tr:nth-child(odd) td {
+    background-color: #F0F0F0;
+  }
+  
+  caption {
+  caption-side:bottom;
+  font-weight:bold;
+  font-style:italic;
+  margin:4px;
+  }
+  
+  table,th, td {
+  border: 1px solid gray;
+  }
+  
+  th, td,button {
+  height: 24px;
+  padding:4px;
+  vertical-align:middle;
+  }
+  
+ 
+  .rowtitle {
+  background: #9CF;
+  font-weight:bold;
+  }

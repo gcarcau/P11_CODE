@@ -1,0 +1,19 @@
+<div class="table-card">
+
+    <table>
+        <thead>
+            <caption>Liste des spécialités</caption>
+            <tr>
+                <th>Groupe</th>
+                <th>Nom</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let specialite of specialisations$ | async">
+                <td><span> {{specialite.nom}} </span></td>
+                <td><span> {{specialite.groupe}} </span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
