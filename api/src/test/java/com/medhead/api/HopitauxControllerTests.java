@@ -2,6 +2,7 @@ package com.medhead.api;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.jupiter.api.Test;
@@ -51,6 +52,12 @@ public class HopitauxControllerTests {
     @Test
     public void testGetDemandes() throws Exception {
         mockMvc.perform(get("/demandes"))
+            .andExpect(status().isOk());
+    }
+    
+    @Test
+    public void testBookBed() throws Exception {
+        mockMvc.perform(put("/hopitaux_tests/id=1&book=1&apikey=almaisthebest"))
             .andExpect(status().isOk());
     }
 
