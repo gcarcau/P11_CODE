@@ -12,7 +12,7 @@ export class HopitauxService {
 
     }
     hopitaux: Hopitaux[]= [];
-
+    apiKey:string = "almaisthebest";
     getAllHopitaux() : Observable<Hopitaux[]> {
         return this.http.get<Hopitaux[]>('/api/hopitaux');
     }
@@ -22,6 +22,11 @@ export class HopitauxService {
     }
 
     rechercheHopital(rechercheHopital:RechercheHopital) : Observable<Hopitaux> {
-        return this.http.get<Hopitaux>(`/api/hopitaux/${rechercheHopital.idSpecialisations}/${rechercheHopital.adresse}`);
+        return this.http.get<Hopitaux>(`/api/hopitaux/idspec=${rechercheHopital.idSpecialisations}&adresse=${rechercheHopital.adresse}&apikey=${this.apiKey}`);
     }
+
+    reserveUnHopital(hopitalId:number, reserver: 'book' | 'unBook'): Observable<Hopitaux> {
+        return this.http.put<Hopitaux>(`/api/hopitaux/id=${hopitalId}&book=${(reserver === 'book' ? 1 : 0)}&apikey=${this.apiKey}`,'')
+    }
+    
 }

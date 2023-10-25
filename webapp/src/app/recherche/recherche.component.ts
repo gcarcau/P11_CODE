@@ -19,6 +19,8 @@ export class RechercheComponent implements OnInit {
   rechercheForm!: FormGroup;
   hopital$!: Observable<Hopitaux>;
   urlRegex!: RegExp;
+  booked:boolean = false;
+  buttonText:string='Réservez un lit';
   geoloc!:String;
   constructor(private formBuilder: FormBuilder,
     private hopitauxService: HopitauxService,
@@ -55,5 +57,14 @@ export class RechercheComponent implements OnInit {
     adresse = adresse?.replaceAll('&', '+');
     //adresse = adresse?.replaceAll('%20','');
     return adresse;
+  }
+  reserverUnLit(idHopital:number) {
+    console.log(this.booked,idHopital);
+    this.hopital$ = this.hopitauxService.reserveUnHopital(idHopital,(this.booked ? "unBook" : "book")).pipe(
+      tap(() => {
+        this.booked = !this.booked;
+        this.buttonText=this.booked ? 'Annulez votre réservation' : 'Réservez un lit'
+      })
+    );
   }
 }

@@ -25,6 +25,6 @@
     <p>Adresse : {{hopital.localisation}}</p>
     <p>
         <button (click)="onItinairaire(hopital.localisation)">S'y rendre !</button>
-        <button>Réservez un lit</button>
+        <button (click)="reserverUnLit(hopital.id)">{{buttonText}}</button>
     </p>
 </div>
