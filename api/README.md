@@ -10,10 +10,10 @@ Exécutez le projet à l'aide de votre IDE préféré, puis rendez-vous sur `htt
 
 Utilisez les répertoires `models`,`repository`,`controller`,`services` pour ajouter des features.
 
-`models` : Modèles des classes java
-`repository` : Les repository accèdent à la BDD
-`controller` : Les controllers consomment les services
-`services` : Les services consomment les reposiroty
+* `models` : Modèles des classes java
+* `repository` : Les repository accèdent à la BDD
+* `controller` : Les controllers consomment les services
+* `services` : Les services consomment les reposiroty
 
 ## Build
 
