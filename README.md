@@ -34,7 +34,7 @@ Guillaume CARCAU
 Guillaume CARCAU
 
 ## WorkFlow
-```
+
 Le WorkFlow utilisé pour se projet est un workflow reposant sur "GitFlow" qui consiste à avoir plusieurs branches de fonctionnalités :
     - Feature : Concerne les branches des features à développer
     - Developpement : Concerne la branche des features en développement
@@ -44,4 +44,15 @@ Le WorkFlow utilisé pour se projet est un workflow reposant sur "GitFlow" qui c
  
 Pour chaque nouvelle fonctionnalité :
 * Merci de bien vouloir suivre la méthodologie [GitFlow](https://buildmedia.readthedocs.org/media/pdf/git-flow/latest/git-flow.pdf).
-```
+
+
+## Pipeline CI/CD
+
+La pipeline CI/CD mise en place est disponible sous l'onglet [Github Actions](https://github.com/gcarcau/P11_CODE/actions)
+
+Deux actions sont effectués lors de __CHAQUE__ push sur la __branche main__:
+* Build : Cette pipeline vérifie le bon fonctionnement du build.
+* Tests : Cette pipeline vérifie la bonne éxécution des tests (unitaires).
+ 
+Informations complémentaires à GitHub Action :
+* Merci de bien vouloir suivre la méthodologie [GitFlow](https://buildmedia.readthedocs.org/media/pdf/git-flow/latest/git-flow.pdf).
