@@ -1,56 +1,25 @@
 # P11_CODE
 
-MedHead met en place une application web de réservation de lits. 
+MedHead met en place une application web de réservation de lits. `EMERGENCY EXPERT SYSTEMS`
 
 ## Introduction
 
 Le présent projet est une preuve de concept pour le projet Preuve de concept (l'allocation de lits d'hôpital pour les urgences)
 
 
-### Installation
+### Spécificités du POC
 
-Voici les étapes à suivre pour avoir un environnement de développement et de test opérationnel :
+Les spécificatés du POC (Installation, Build, Tests) sont disponibles dans les READ.md qui leur sont associés.
 
+* Pour l'API : [README.md](https://github.com/gcarcau/P11_CODE/blob/main/api/README.md)
+* Pour la WebApp : [README.md](https://github.com/gcarcau/P11_CODE/blob/main/webapp/README.md)
 
-```
-Pour installer l'application web vous devez :
-1. Installer un éditeur de code (VS Code par exemple) pour projet Angular
-2. Installer Angular sur votre poste
-3. Installer Eclipse ou tout autre éditeur de code java pour projet Maven / Spring Boot
-4. Installez MySQL ou tout autre logiciel de gestion de BDD SQL sur votre poste
-5. Téléchargez les fichiers sources "WebApp" pour la partie front-end, et "Api" pour la partie back-end.
-```
-
-
-
-## Executer les tests
-
-```
-Les tests mis en places sont les test unitaires.
-Chaque test, test indépendament une fonctionnalité de l'application web
-- Chargement de la liste des hôpitaux (back-end et front-end)
-- Chargement des spécialisations (back-end et front-end)
-- Chargement des demandes (back-end et front-end)
-- Recherche d'un hôpital (back-end et front-end)
-```
-
-
-## Déploiement
-
-Voici les étapes à suivre pour déployer en production :
-
-```
-Installer ces fichiers code sur un serveur WEB.
-Acheter un nom de domaine
-Lier le nom de domaine au serveur web
-Accéder à l'application web
-```
-
-## Technologies :
+## Technologies
 
 * HTML5/CSS3
 * [Boostrap](https://getbootstrap.com/)
 * [Angular](https://angular.io/docs)
+* [TypeScript](https://www.typescriptlang.org/)
 * [Java](https://www.java.com/fr/)
 * [Spring Boot](https://spring.io/projects/spring-boot)
 * [JMeter](https://jmeter.apache.org/)
@@ -65,7 +34,7 @@ Guillaume CARCAU
 Guillaume CARCAU
 
 ## WorkFlow
-
+```
 Le WorkFlow utilisé pour se projet est un workflow reposant sur "GitFlow" qui consiste à avoir plusieurs branches de fonctionnalités :
     - Feature : Concerne les branches des features à développer
     - Developpement : Concerne la branche des features en développement
@@ -75,3 +44,4 @@ Le WorkFlow utilisé pour se projet est un workflow reposant sur "GitFlow" qui c
  
 Pour chaque nouvelle fonctionnalité :
 * Merci de bien vouloir suivre la méthodologie [GitFlow](https://buildmedia.readthedocs.org/media/pdf/git-flow/latest/git-flow.pdf).
+```

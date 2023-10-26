@@ -1,30 +1,19 @@
-# Webapp
+# Api
 
-Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
-
-Téléchargez les fichiers de ce répository sur votre poste de travail, et exécutez `npm install` dans le répertoire créé.
-
-Cette action initialisera le projet avec Angular.
+Ce projet a été généré avec [SpringBoot](https://spring.io/projects/spring-boot) version 3.1.15.
 
 ## Serveur de développement
 
-Exécutez `ng serve` pour le serveur de développement. Accèdez à `http://localhost:4200/` sur votre navigateur. L'application se rechargera automatiquement à chaque sauvgarde du projet.
+Exécutez le projet à l'aide de votre IDE préféré, puis rendez-vous sur `http://localhost:3000/`.
 
 ## Norme de programmation
 
 Utilisez les répertoires `models`,`repository`,`controller`,`services` pour ajouter des features.
 
-### `models` :
-Modèles des classes java
-
-### `repository`
-Les repository accèdent à la BDD
-
-### `controller`
-Les controllers consomment les services
-
-### `services`
-Les services consomment les reposiroty
+`models` : Modèles des classes java
+`repository` : Les repository accèdent à la BDD
+`controller` : Les controllers consomment les services
+`services` : Les services consomment les reposiroty
 
 ## Build
 
@@ -40,7 +29,7 @@ Exécutez `mvn clean verify -P end-to-end-test` pour démarrer les end-to-end te
 
 ## Aide approfondie
 
-### Documentation de référence (en anglais)
+Documentation de référence (en anglais):
 Pour vous renseigner sur les documentations de références veuillez vous rendre dans les liens ci-après :
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
@@ -49,8 +38,8 @@ Pour vous renseigner sur les documentations de références veuillez vous rendre
 * [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.0/reference/htmlsingle/#web)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/docs/3.1.0/reference/htmlsingle/#data.sql.jpa-and-spring-data)
 
-### Guides
-Les guides ci-dessous sont illustrés et démontres certains cas pour vous aider :
+Guides : 
+Les guides ci-dessous sont illustrés et démontres certains cas pour vous aider (toujours en anglais):
 
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
