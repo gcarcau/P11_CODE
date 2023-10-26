@@ -1,27 +1,31 @@
 # Webapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
 
-## Development server
+Téléchargez les fichiers de ce répository sur votre poste de travail, et exécutez `npm install` dans le répertoire créé.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Cette action initialisera le projet avec Angular.
 
-## Code scaffolding
+## Serveur de développement
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exécutez `ng serve` pour le serveur de développement. Accèdez à `http://localhost:4200/` sur votre navigateur. L'application se rechargera automatiquement à chaque sauvgarde du projet.
+
+## Norme de programmation
+
+Exécutez `ng generate component component-name` pour générer un nouveau composant. Vous pouvez aussi utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Exécutez `ng build` pour construire le projet. Les artéfacts de builds seront stocké dans `dist/`.
 
-## Running unit tests
+## Exécution des tests unitaires
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Exécutez `ng test` pour exécuter les test unitaire avec [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Exécution des tests end-to-end
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Exécutez `ng e2e` pour démarrer les end-to-end tests sur la platforme de votre choix.
 
-## Further help
+## Aide approfondie
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour accèder à l'aide d'Angular CLI, éxécutez `ng help` ou rendez-vous sur [Angular CLI Overview and Command Reference](https://angular.io/cli).
