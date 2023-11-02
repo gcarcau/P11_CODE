@@ -25,7 +25,16 @@ Exécutez `mvn test` pour exécuter les test unitaire avec [JUnit 5](https://jun
 
 ## Exécution des tests end-to-end
 
-Exécutez `mvn clean verify -P end-to-end-test` pour démarrer les end-to-end tests.
+Pré-requis : [python](https://www.python.org/)
+
+VERSIONS AU 11/2023 [version](https://chromedriver.chromium.org/downloads/version-selection)
+* Chrome 119
+* ChromeDriver 119
+
+* Rendez-vous dans le répertoire E2E de ce répository
+* Téléchargez le contenu sur votre poste
+* Vérifiez vos versions de Chrome et ChromeDriver
+* Éxecutez `python e2e_test_search.py` dans un terminal
 
 ## Aide approfondie
 
@@ -37,6 +46,7 @@ Pour vous renseigner sur les documentations de références veuillez vous rendre
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.0/maven-plugin/reference/html/#build-image)
 * [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.0/reference/htmlsingle/#web)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/docs/3.1.0/reference/htmlsingle/#data.sql.jpa-and-spring-data)
+* [Python](https://www.python.org/)
 
 Guides : 
 Les guides ci-dessous sont illustrés et démontres certains cas pour vous aider (toujours en anglais):
