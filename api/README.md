@@ -31,6 +31,7 @@ VERSIONS AU 11/2023 [version](https://chromedriver.chromium.org/downloads/versio
 * Chrome 119
 * ChromeDriver 119
 
+ÉTAPES
 * Rendez-vous dans le répertoire E2E de ce répository
 * Téléchargez le contenu sur votre poste
 * Vérifiez vos versions de Chrome et ChromeDriver
